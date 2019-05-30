@@ -1,0 +1,104 @@
+body, html {
+    height: 100%;
+}
+
+
+.index-image {
+    /* The image used */
+    background-image: url("../img/home-bg.jpg");
+
+    /* Add the blur effect */
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.index-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.addClients-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -41%);
+    /* z-index: 2; */
+    padding: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.add-innerbox {
+    padding: 20px 15px 0px;
+}
+
+.login-image {
+    /* The image used */
+    background-image: url("../img/1.jpeg");
+
+    /* Add the blur effect */
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.signup-image {
+    /* The image used */
+    background-image: url("../img/1.jpeg");
+
+    /* Add the blur effect */
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signup-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -46%);
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+hr {
+    background-color: #ecf0f1;
+}
