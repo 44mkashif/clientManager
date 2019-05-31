@@ -57,6 +57,15 @@
         }
     }
 
+    //Check for query string
+    //If account created successfully
+    if( isset($_GET['alert'] ) ) {
+        if( $_GET['alert'] == 'accountCreated' ) {
+            $alertMessage = "<div class='alert alert-success'>Congratulations! Account created Successfully!<button type='button' class='close'>
+            <span data-dismiss='alert' aria-hidden='true'>&times;</span></button></div>";
+        }
+    }
+
     //close connection
     mysqli_close($conn);
     
@@ -71,6 +80,13 @@
             <div class="container jumbotron bg-dark text-light text-center">
                 <h1>Login</h1>
                 <p class="lead">Use this from to log into your Account</p>
+
+                <?php 
+                if( isset( $_GET['alert'] ) ) {
+                    echo $alertMessage;
+                }
+                ?>
+
                 <form class="form"  method="POST" action="<?php echo htmlspecialchars( $_SERVER['PHP_SELF'] ); ?>">
                     
                     <div class="form-group row">

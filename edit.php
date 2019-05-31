@@ -189,8 +189,10 @@
                     <br>
                 </div>
                 <div class="modal-footer bg-secondary">
+                    <form class="form"  method="POST" action="<?php echo htmlspecialchars( $_SERVER['PHP_SELF'] ); ?>?id=<?php echo $clientId; ?>">
                         <input type="submit" name="delete" class="btn btn-danger btn-sm" value="Yes">
                         <a type="button" class="btn btn-primary bg-dark text-light btn-sm" data-dismiss="modal" >No</a>
+                    </form>
                 </div>
             </div>
         </div>

@@ -17,8 +17,7 @@
         $query = "INSERT INTO users (email, username, password) VALUES ('$formEmail', '$formUser', '$hashedPassword');";
 
         if(mysqli_query($conn, $query)){
-            echo "<div class='alert alert-success'>Congratulations! Account Created Successfully</div>";
-            header('Location: login.php');
+            header('Location: login.php?alert=accountCreated');
         }
         else{
             echo "<div class='alert alert-danger'>ERROR:".mysqli_error($conn);"</div>";
