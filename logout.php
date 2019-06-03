@@ -16,7 +16,7 @@
     <div class="row" style="margin-top:100px">
         <div class="col-md-3"></div>
         <div class="col-md-6">
-            <div class="container jumbotron bg-dark text-light text-center">
+            <div class="container jumbotron text-light text-center">
                 <!-- <h1>Profile Page</h1> -->
                 <p class="lead">You've been Logged Out! See you Next time...</p>
                 <br>
